@@ -7,6 +7,7 @@ public class InterfaceDoSistema {
 
         iPHONE iphone = new iPHONE();
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Escolha uma opção: \n 1- Telefone \n 2- Navegador \n 3- Reprodutor musical");
         int escolha = scanner.nextInt();
 
