@@ -6,10 +6,22 @@ import com.iPHONE.funcoes.model.Telefone;
 
 public class iPHONE implements Telefone, ReprodutorMusical, Navegador {
 
+    String[] contatos = {"Ana", "Bruno", "Carlos", "Humberto", "Magda", "Luiz", "Chefe"};
+    private String ligacao;
+
+
+    public String getLigacao() {
+        return ligacao;
+    }
+
+    public void setLigacao(String ligacao) {
+        this.ligacao = ligacao;
+    }
+
     //Métodos de Telefone
     @Override
     public void ligar() {
-        System.out.println("Para quem você deseja ligar?");
+        System.out.println("Sua escolha foi: "+ getLigacao());
     }
 
     @Override
@@ -24,6 +36,10 @@ public class iPHONE implements Telefone, ReprodutorMusical, Navegador {
 
     @Override
     public void exibirContatos() {
+
+        for(String contato : contatos ){
+            System.out.println(contato);
+        }
 
     }
 
